@@ -3,21 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webシステム構築基礎 第2回課題<br>一井晄祐(AAA24058)</title>
-    <h1>おすすめの旅行先</h1>
-    <h2><a href="index.html">前のページはこちら</a></h2>
+    <title>Webシステム構築基礎 第2回課題及び第3回課題 一井晄祐(AAA24058)</title>
+</head>
+<body>
 
+    <h1>Web課題</h1>
+
+    <h2>BMI指標計算</h2>
+    <form oninput="bmi.value = Math.round(Number(weight.value) / Math.pow(Number(height.value)/100, 2) * 10) / 10">
+        <p><label>体重(kg)：<input name="weight" type="number" step="any"></label></p>
+        <p><label>身長(cm)：<input name="height" type="number" step="any"></label></p>
+        <p><label>BMI：<output name="bmi"></output></label></p>
+    </form>
+
+    <hr>
+
+    <h2>おすすめの旅行先</h2>
+    
     <div>
-        <p>ランキング形式でご紹介</p>
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCqcHKV1tH8g6KiU9UYGPgUnt6PgTANGD_vzxF9N5pL_lkJr1a0M8Z-0OB4rVdewJb4ZkcHaP6hyphenhyphenSZyuPeIjYbSIXxtjHcuVB2vem87j87rj16CRcu6RLPrKGdJFIz0jWFyzx_aG2M0DI/s800/makuranage.png" width="300">
+        <h3>ランキング形式でご紹介</h3>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCqcHKV1tH8g6KiU9UYGPgUnt6PgTANGD_vzxF9N5pL_lkJr1a0M8Z-0OB4rVdewJb4ZkcHaP6hyphenhyphenSZyuPeIjYbSIXxtjHcuVB2vem87j87rj16CRcu6RLPrKGdJFIz0jWFyzx_aG2M0DI/s800/makuranage.png" width="300" alt="旅行のイメージ画像">
         <ol>
             <li>滋賀県彦根市</li>
             <li>滋賀県高島市</li>
             <li>滋賀県草津市</li>
             <li>滋賀県甲賀市</li>
             <li>滋賀県大津市</li>
-            
         </ol>
         <p>いかがでしたか？</p>
     </div>
-</head>
+
+    <hr>
+
+    <p><a href="index.html">前のページはこちら</a></p>
+
+</body>
+</html>
